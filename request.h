@@ -1,0 +1,2 @@
+Request getPost();
+Request getGet();
