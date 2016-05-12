@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "tokenizer.h"
 #include "request.h"
+Request tokenize(char *, long int); // Promise to compiler
 
 Request getPost() { // Wrapepr for handling a POST request
 	char *conLen = getenv("CONTENT_LENGTH"); // Store CONTENT_LENGTH
