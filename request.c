@@ -141,6 +141,10 @@ Request tokenize(char *data, long int count) { // The function that actually doe
 		consItem.val[consItem.valLen - 1] = '\0'; // Make sure the last character of the string is the null character
 		k += consItem.valLen; // Add the length of the last string to the offset
 
+		// Don't count the trailing null charatcer in the string length actually returned to the user
+		consItem.tagLen--;
+		consItem.valLen--;
+
 		req.items[i] = consItem;
 
 	}

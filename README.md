@@ -28,21 +28,21 @@ If the GET (or POST) request string was `q=example+get+requests+with+a+%25+sign!
 	* `Item *items`
 		* `Item`
 			* `char *tag = "q\0"`
-			* `int tagLen = 2`
+			* `int tagLen = 1`
 			* `char *val = "example get requests with a % sign!\0"`
-			* `int valLen = 36`
+			* `int valLen = 35`
 		* `Item`
             * `char *tag = "sourceid\0"`
-            * `int tagLen = 9`
+            * `int tagLen = 8`
             * `char *val = "chrome\0"`
-            * `int valLen = 6`
+            * `int valLen = 5`
 		* `Item`
             * `char *tag = "es_sm\0"`
-            * `int tagLen = 6`
+            * `int tagLen = 5`
             * `char *val = "91\0"`
-            * `int valLen = 3`
+            * `int valLen = 2`
 		* `Item`
             * `char *tag = "ie\0"`
-            * `int tagLen = 3`
+            * `int tagLen = 2`
             * `char *val = "UTF-8\0"`
-            * `int valLen = 6`
+            * `int valLen = 5`
